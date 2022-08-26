@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMC</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tela De Login Responsiva</title>
 </head>
+<header>
+    <h2>Calcule seu IMC e veja se ele se encontra na faixa adequada!!</h2>
+</header>
 <body>
-    <footer>
-      <h2>Indice</h2>
-    </footer>
     <div class="container">
-    <div class="card">
-      <div class="card2">
-     <div class="altura">
-    <input type="number" name="text" class="input" placeholder="Altura (M)" id="altura" >
-    <input type="number" name="text" class="input" placeholder="Peso (KG)" id="peso" >
-  </div>
-  <button onclick="calcIMC()">Calcular</button>
-  <span id="resultado"></span>
+        <div class="card">
+         <div class="altura">
+            <input placeholder="Altura (M)" type="number" class="input" id="altura">
+            <input placeholder="Peso (Kg)" type="number" class="input" id="peso">
+      </div>
+      <button onclick="calcIMC()" class="btn">Resultado</button>
+      <span id="resultado"></span>
     </div>
-    </div>
-  </div>
-</div>
-</div>
-<span id="resultado"></span>
-    
-    
 
-
-  <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <h2>SENAI 2-A</h2>
+            <p>Lógica de Programação Atividade Avaliativa,Criar uma calculadora de IMC</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/victor.hhh/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/victor-hugo-de-souza/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/victorh21"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
